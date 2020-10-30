@@ -32,17 +32,28 @@
             <a href="#" class="pulsingButton">The Lekki Massacre</a>
             <h3>20th October; 2020</h3>
             <p>GYRO Design Lab</p>
-            <audio controls>
+            
+            <!-- <audio controls loop autoplay>
                 <source src="horse.ogg" type="audio/ogg">
-                <source src="horse.mp3" type="audio/mpeg">
+                <source src="assets/burna.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
+            </audio> -->
+
+            <iframe src="assets/burna.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+            </iframe>
+            <audio controls autoplay loop id="playAudio">
+                <source src="assets/burna.mp3" type="audio/mpeg">
             </audio>
+
+
         </div>
 
         
 
 
-        
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 
         <!--Custom Script-->
         <script src="assets/js/app.js"></script>
